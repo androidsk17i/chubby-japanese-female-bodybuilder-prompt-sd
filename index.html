@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SD 1.5 Prompt Generator - Japanese Female Bodybuilder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Japanese Female Bodybuilder Prompt Generator</h1>
+        
+        <div class="prompt-section">
+            <h2>Positive Prompt</h2>
+            <textarea id="positivePrompt" readonly></textarea>
+            <button onclick="copyToClipboard('positivePrompt')" class="copy-button">Copy Positive Prompt</button>
+        </div>
+
+        <div class="prompt-section">
+            <h2>Negative Prompt</h2>
+            <textarea id="negativePrompt" readonly></textarea>
+            <button onclick="copyToClipboard('negativePrompt')" class="copy-button">Copy Negative Prompt</button>
+        </div>
+
+        <button onclick="generatePrompts()" id="generateButton">Generate New Prompts</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
