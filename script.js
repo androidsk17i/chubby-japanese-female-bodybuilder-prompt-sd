@@ -57,6 +57,18 @@ const positiveAttributes = {
         "in spring jacket with umbrella"
     ],
     poses: [
+        "standing confidently",
+        "sitting elegantly",
+        "walking gracefully",
+        "leaning casually",
+        "stretching gently",
+        "posing naturally",
+        "kneeling down",
+        "bending slightly",
+        "standing straight",
+        "reclining comfortably"
+    ],
+    actions: [
         "cooking healthy meal in modern kitchen",
         "shopping at local supermarket",
         "working on laptop at coffee shop",
@@ -87,6 +99,40 @@ const positiveAttributes = {
         "enjoying sunset view",
         "listening to music with headphones",
         "painting at art easel"
+    ],
+    scene: [
+        "in modern minimalist apartment",
+        "in cozy home studio",
+        "in bright living room",
+        "in stylish kitchen",
+        "in traditional Japanese room",
+        "in luxury hotel suite",
+        "in professional office",
+        "in high-end restaurant",
+        "in peaceful tea room",
+        "in private gym space",
+        "at scenic park",
+        "in Japanese garden",
+        "at quiet beach",
+        "in city street",
+        "at outdoor cafe",
+        "in shopping district",
+        "at temple grounds",
+        "in bamboo forest",
+        "at riverside path",
+        "in cherry blossom garden"
+    ],
+    lighting: [
+        "soft natural lighting",
+        "golden hour sunlight",
+        "warm indoor lighting",
+        "professional studio lighting",
+        "morning sunlight",
+        "evening sunset glow",
+        "ambient cafe lighting",
+        "dramatic side lighting",
+        "diffused daylight",
+        "atmospheric mood lighting"
     ],
     quality: [
         "8k ultra HD",
@@ -143,12 +189,15 @@ function getRandomElements(array, count = 1) {
 }
 
 function generatePrompts() {
-    // Generate positive prompt
+    // Generate positive prompt with new elements
     const positive = [
         getRandomElements(positiveAttributes.subject),
         getRandomElements(positiveAttributes.bodyType),
-        getRandomElements(positiveAttributes.style),
         getRandomElements(positiveAttributes.poses),
+        getRandomElements(positiveAttributes.style),
+        getRandomElements(positiveAttributes.actions),
+        getRandomElements(positiveAttributes.scene),
+        getRandomElements(positiveAttributes.lighting),
         ...getRandomElements(positiveAttributes.quality, 3)
     ].join(", ");
 
