@@ -1,6 +1,6 @@
 const positiveAttributes = {
     subject: [
-        "beautiful mature Japanese female bodybuilder",
+        "beautiful 35 years old Japanese female bodybuilder",
     ],
     bodyType: [
         "chubby muscular",
