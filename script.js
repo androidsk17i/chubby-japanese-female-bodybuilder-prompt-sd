@@ -1,9 +1,13 @@
 const positiveAttributes = {
     subject: [
-        "beautiful 35 years old Japanese female bodybuilder",
+        "beautiful 35 years old chubby Japanese female bodybuilder",
     ],
     bodyType: [
-        "chubby muscular",
+        "plump muscular body",
+        "thick muscular build",
+        "full-figured muscular physique",
+        "curvy strong body",
+        "voluptuous muscular frame"
     ],
     style: [
         "in fitted white t-shirt with blue jeans",
@@ -154,7 +158,8 @@ const negativePrompts = [
     "missing limb", "floating limbs", "disconnected limbs", "malformed hands",
     "out of focus", "long neck", "long body", "distorted", "bad proportions",
     "bad shadows", "grainy", "low quality", "duplicate", "morbid",
-    "extra fingers", "mutated hands", "poorly drawn", "out of frame"
+    "extra fingers", "mutated hands", "poorly drawn", "out of frame",
+    "thin", "skinny", "slender", "lean", "anorexic", "slim"
 ];
 
 function removeDuplicateWords(str) {
